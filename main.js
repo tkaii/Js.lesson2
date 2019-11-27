@@ -1,6 +1,11 @@
 // 座右の銘
-let word = "中庸";
-const phrase = '私の好きな言葉は、${word}です。';
+const phrase = '私の好きな言葉は、\'中庸\'です。';
+console.log(phrase);
+
+document.body.innerHTML =
+  `
+  <p>${phrase}</p>
+  `
 
 const obj1 = {
   name: "Toshi",
@@ -9,15 +14,14 @@ const obj1 = {
 
 document.body.innerHTML =
   `
-  <p>私の好きな言葉は、${word}です。</p>
   <p>家族の名前：${obj1.name}</p>
   <p>私との関係：${obj1.relationship}</p>
   `
 
-var today = new Date();
-var Year = today.getFullYear();
-var Month = today.getMonth();
-var Date = today.getDay();
+
+const today = new Date();
+const Year = today.getFullYear();
+const Month = today.getMonth();
+const Date = today.getDay();
 
 alert(Year+"年"+Month+"月"+Date+"日");
-
