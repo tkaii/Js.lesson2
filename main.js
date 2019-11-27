@@ -2,26 +2,28 @@
 const phrase = '私の好きな言葉は、\'中庸\'です。';
 console.log(phrase);
 
-document.body.innerHTML =
-  `
-  <p>${phrase}</p>
-  `
+//document.body.innerHTML =
+//  `
+//  <p>${phrase}</p>
+//  `
 
 const obj1 = {
   name: "Toshi",
   relationship: "母"
 };
 
-document.body.innerHTML =
-  `
-  <p>家族の名前：${obj1.name}</p>
-  <p>私との関係：${obj1.relationship}</p>
-  `
-
+//document.body.innerHTML =
+//  `
+//  <p>家族の名前：${obj1.name}</p>
+//  <p>私との関係：${obj1.relationship}</p>
+//  `
+console.log(obj1.name);
+console.log(obj1.relationship);
 
 const today = new Date();
-const Year = today.getFullYear();
-const Month = today.getMonth();
-const Date = today.getDay();
+//const Year = today.getFullYear();
+//const Month = today.getMonth();
+//const Date = today.getDay();
 
-alert(Year+"年"+Month+"月"+Date+"日");
+//alert(Year+"年"+Month+"月"+Date+"日");
+alert(today);
